@@ -1,0 +1,17 @@
+{
+  "name": "git-help",
+  "homepage": "https://github.com/madhankumar028/git-help",
+  "authors": [
+    "'madhankumar028' <'madhankumar028@gmail.com'>"
+  ],
+  "description": "git-help ",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
