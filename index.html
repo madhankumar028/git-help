@@ -4,47 +4,140 @@
 		<title>Git-help</title>
 		<!-- Linking CSS -->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
-	<body>
-	  	<!-- jumbotron -->
-	  	<div class="jumbotron text-center">
-	  		Git-help
-	  	</div>
+	<body>	  	
 	  	<!-- container -->
 	  	<div class="container">
-			<div class="panel-group" id="accordion">
+	  		<div class="panel-group start-panel">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-								Branches	
-							</a>
-						</h4>
-					</div>
-					<div id="collapse1" class="panel-collapse collapse in">
-						<div class="panel-body">
-							git branch -a
+						<div class="panel-title" data-toggle="collapse" href="#collapse1">
+							Git-help
 						</div>
 					</div>
-				</div>			
+					<div id="collapse1" class="panel-collapse collapse">
+						<table class="list-group">
+							<tr class="list-group-item">
+								<td>Creator</td>
+								<td>
+									<a class="name" href="https://github.com/madhankumar028">Madhankumar</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-								Creating a Repo
-							</a>
-						</h4>
-					</div>
-					<div id="collapse2" class="panel-collapse collapse in">
-						<div class="panel-body">
-							<ul>
-								<li class="panel-iem">git init</li>
-								<li class="panel-iem">git clone (repo_url)</li>
-								<li class="panel-iem">git remote add (origin)</li>
-							</ul>
+						<div class="panel-title" data-toggle="collapse" href="#collapse2">
+							Configuring User Information
 						</div>
 					</div>
-				</div>			
+					<div id="collapse2" class="panel-collapse collapse">
+						<ul class="list-group">
+							<li class="list-group-item">
+								$ git config --global user.name "[name]" <br/>
+								<span>
+									Sets the name you want atached to your commit transactions
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git config --global user.email "[mail-id]" <br/>
+								<span>
+									Sets the mail-id you want atached to your commit transactions
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git config --global color.ui auto <br/>
+								<span>
+									Enables helpful colorization of command line output	
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title" data-toggle="collapse" href="#collapse3">
+							Make Changes
+						</div>
+					</div>
+					<div id="collapse3" class="panel-collapse collapse">
+						<ul class="list-group">
+							<li class="list-group-item">
+								$ git status <br/>
+								<span>
+									Lists all new or modified files to be commited
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git diff <br/>
+								<span>
+									Shows file differences not yet staged
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git add [file] <br/>
+								<span>
+									Snapshots the file in preparation for versioning
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git add . <br/>
+								<span>
+									Adds all the changed files into staging
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git reset [file] <br/>
+								<span>
+									Unstages the file, but preserve its contents
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git commit -m "[descriptive message]" <br/>
+								<span>
+									Records file snapshots permanently in version history
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git push origin master <br/>
+								<span>
+									Push all your newly changes files into master branch
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="panel-group end-panel">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title" data-toggle="collapse" href="#collapse4">
+							Create git repo
+						</div>
+					</div>
+					<div id="collapse4" class="panel-collapse collapse">
+						<ul class="list-group">
+							<li class="list-group-item">
+								$ git init <br/>
+								<span>
+									Initialize your local project as git
+								</span>
+							</li>
+							<li class="list-group-item">
+								$ git clone [repo_url] <br/>
+								<span>
+									Downloads a project and its entire version history
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	    <!-- Linking JS -->

@@ -1,0 +1,27 @@
+.start-panel {
+	margin-top: 20px;
+}
+.panel-group {
+	margin-bottom: 0px;
+}
+.panel-title {
+	cursor: pointer;
+}
+.panel-heading {
+	width: 350px;
+}
+td {
+	padding-right: 80px;
+}
+.name {
+	text-decoration: none;
+}
+li {
+	color: green;
+}
+li>span {
+	color: red;
+}
+.end-panel {
+	margin-bottom: 20px;
+}
