@@ -1,14 +1,12 @@
 {
   "manifest_version": 2,
-
   "name": "Git-help",
   "description": "Gives the basic git commands",
   "version": "1.0",
-
   "browser_action": {
-   "default_popup": "index.html"
+    "default_popup": "index.html"
   },
   "permissions": [
-   "activeTab"
-   ]
+    "activeTab"
+  ]
 }

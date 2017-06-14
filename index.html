@@ -1,173 +1,194 @@
 <!Doctype html>
 <html>
 	<head>
-		<title>Git-help</title>		
+		<title>Git-help</title>
 		<link rel="stylesheet" href="main.css">
 	</head>
-	<body>	  	
+	<body>
 	  	<!-- container -->
 	  	<div class="container">
 	  		<div class="panel-group start-panel">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title" data-toggle="collapse" href="#collapse1">
-							<h1>Git-help</h1>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title" data-toggle="collapse" href="#collapse1">
+								<h1>Git-help</h1>
+							</div>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<table class="list-group">
+								<tr class="list-group-item">
+									<td><h2>Creator</h2></td>
+									<td>
+										<h3>
+											<a class="name" href="https://madhankumar028.github.io" target="_blank">Madhankumar</a>
+										</h3>
+									</td>
+								</tr>
+							</table>
 						</div>
 					</div>
-					<div id="collapse1" class="panel-collapse collapse">
-						<table class="list-group">
-							<tr class="list-group-item">
-								<td><h3>Creator</h3></td>
-								<td>
-									<h2>
-										<a class="name" href="https://madhankumar028.github.io" target="_blank">Madhankumar</a>
-									</h2>
-								</td>
-							</tr>
-						</table>
+				</div>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title" data-toggle="collapse" href="#collapse2">
+								<h3>Configuring User Information</h3>
+							</div>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<h4 class="command">$ git config --global user.name "[name]"</h4>
+									<p>
+										Sets the name you want atached to your commit transactions
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git config --global user.email "[mail-id]"</h4>
+									<p>
+										Sets the mail-id you want atached to your commit transactions
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git config --global color.ui auto</h4>
+									<p>
+										Enables helpful colorization of command line output
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title" data-toggle="collapse" href="#collapse3">
+								<h3>Make Changes</h3>
+							</div>
+						</div>
+						<div id="collapse3" class="panel-collapse collapse">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<h4 class="command">$ git status</h4>
+									<p>
+										Lists all new or modified files to be commited
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git diff</h4>
+									<p>
+										Shows file differences not yet staged
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git add [file]</h4>
+									<p>
+										Snapshots the file in preparation for versioning
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git add .</h4>
+									<p>
+										Adds all the changed files into staging
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git reset [file]</h4>
+									<p>
+										Unstages the file, but preserve its contents
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git commit -m "[descriptive message]"</h4>
+									<p>
+										Records file snapshots permanently in version history
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git push origin master</h4>
+									<p>
+										Push all your newly changes files into master branch
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title" data-toggle="collapse" href="#collapse4">
+								<h3>Create git repo</h3>
+							</div>
+						</div>
+						<div id="collapse4" class="panel-collapse collapse">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<h4 class="command">$ git init</h4>
+									<p>
+										Initialize your local project as git
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git clone [repo_url]</h4>
+									<p>
+										Downloads a project and its entire version history
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel-group end-panel">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title" data-toggle="collapse" href="#collapse5">
+								<h3>Undo</h3>
+							</div>
+						</div>
+						<div id="collapse5" class="panel-collapse collapse">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<h4 class="command">$ git reset --hard HEAD</h4>
+									<p>
+										Discard all you local changes in your current directory
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git reset --hard [commit]</h4>
+									<p>
+										Reverts a commit
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="panel-group end-panel">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title" data-toggle="collapse" href="#collapse5">
+								<h3>Revisiting the commits</h3>
+							</div>
+						</div>
+						<div id="collapse5" class="panel-collapse collapse">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<h4 class="command">$ git log</h4>
+									<p>
+										Displays all the commits with author name, date, commit message and SHA
+									</p>
+								</li>
+								<li class="list-group-item">
+									<h4 class="command">$ git log --oneline</h4>
+									<p>
+										Display all the commits in oneline with commit message and SHA
+									</p>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title" data-toggle="collapse" href="#collapse2">
-							<h3>Configuring User Information</h3>
-						</div>
-					</div>
-					<div id="collapse2" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item">
-								$ git config --global user.name "[name]" <br/>
-								<span>
-									Sets the name you want atached to your commit transactions
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git config --global user.email "[mail-id]" <br/>
-								<span>
-									Sets the mail-id you want atached to your commit transactions
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git config --global color.ui auto <br/>
-								<span>
-									Enables helpful colorization of command line output	
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title" data-toggle="collapse" href="#collapse3">
-							<h3>Make Changes</h3>
-						</div>
-					</div>
-					<div id="collapse3" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item">
-								$ git status <br/>
-								<span>
-									Lists all new or modified files to be commited
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git diff <br/>
-								<span>
-									Shows file differences not yet staged
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git add [file] <br/>
-								<span>
-									Snapshots the file in preparation for versioning
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git add . <br/>
-								<span>
-									Adds all the changed files into staging
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git reset [file] <br/>
-								<span>
-									Unstages the file, but preserve its contents
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git commit -m "[descriptive message]" <br/>
-								<span>
-									Records file snapshots permanently in version history
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git push origin master <br/>
-								<span>
-									Push all your newly changes files into master branch
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="panel-group">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title" data-toggle="collapse" href="#collapse4">
-							<h3>Create git repo</h3>
-						</div>
-					</div>
-					<div id="collapse4" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item">
-								$ git init <br/>
-								<span>
-									Initialize your local project as git
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git clone [repo_url] <br/>
-								<span>
-									Downloads a project and its entire version history
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="panel-group end-panel">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="panel-title" data-toggle="collapse" href="#collapse5">
-							<h3>Undo</h3>
-						</div>
-					</div>
-					<div id="collapse5" class="panel-collapse collapse">
-						<ul class="list-group">
-							<li class="list-group-item">
-								$ git reset --hard HEAD <br/>
-								<span>
-									Discard all you local changes in your current directory
-								</span>
-							</li>
-							<li class="list-group-item">
-								$ git reset --hard [commit] <br/>
-								<span>
-									Reverts a commit
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	    <!-- Linking JS -->		
-	    <script src="main.js"></script>    
-
-  	</body>
+	</body>
 </html>
