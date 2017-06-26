@@ -4,9 +4,9 @@ Git-help is a chrome extension. It shows you the basic git commands with explana
 
 Bootstrap the app Locally
 ```
-$ git clone https://github.com/madhankumar028/git-help.git && cd git-help
-Open chrome and go to `settings --> Extensions enable the developer mode checkbox
-Click Load unpacked extension button and load the git-help project file
+1. $ git clone https://github.com/madhankumar028/git-help.git && cd git-help
+2. Open chrome and go to `settings --> Extensions enable the developer mode checkbox
+3. Click Load unpacked extension button and load the git-help project file
 ```
 
 Cool you are done with configuration. Extension will get added into your browser.
